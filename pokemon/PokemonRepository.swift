@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Combine
 
 class PokemonRepository {
     
@@ -22,4 +23,18 @@ class PokemonRepository {
             }
         }.resume()
     }
+    
+    func fetchDetailPokemon(urlString: String) async throws {
+        guard let url = URL(string: urlString) else {return}
+        let urlRequest = URLRequest(url: url)
+        let data = try await URLSession.shared.data(for: urlRequest)
+        do {
+            let pokemonDetail = try JSONDecoder().decode(DetailPokemon.self, from: data.0)
+            print("Hilo actual2: \(Thread.current)")
+            print("Imagen de pokemon por defecto: \(pokemonDetail.sprites.frontDefault)")
+        } catch {
+            print("Error al parsear")
+        }
+    }
+    
 }

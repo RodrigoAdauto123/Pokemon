@@ -65,7 +65,8 @@ enum MethodType: String {
 
 public enum PokemonEndpoints {
     case getListPokemon
-    case detailPokemon(id: String)
+    case detailPokemon(url: String)
+    case getImage(url: String)
 }
 
 extension PokemonEndpoints: TargetType {
@@ -77,8 +78,10 @@ extension PokemonEndpoints: TargetType {
         switch self {
         case .getListPokemon:
             return String.empty()
-        case .detailPokemon(let id):
-            return "/id"
+        case .detailPokemon(_):
+            return String.empty()
+        case .getImage(_):
+            return String.empty()
         }
     }
     
@@ -86,8 +89,10 @@ extension PokemonEndpoints: TargetType {
         switch self {
         case .getListPokemon:
             return .GET
-        case .detailPokemon(id: _):
-            return .POST
+        case .detailPokemon(_):
+            return .GET
+        case .getImage(_):
+            return .GET
         }
     }
     
@@ -95,7 +100,9 @@ extension PokemonEndpoints: TargetType {
         switch self {
         case .getListPokemon:
             return []
-        case .detailPokemon(id: _):
+        case .detailPokemon(url: _):
+            return []
+        case .getImage(url: _):
             return []
         }
     }
@@ -117,6 +124,26 @@ extension PokemonEndpoints: TargetType {
             }
         }.resume()
         
+    }
+    
+    func requestAsync<T: Decodable>(url: String) async throws -> T? {
+        guard let url = URL(string: url) else {return nil}
+        let urlRequest = URLRequest(url: url)
+        do {
+            let (data, response) = try await URLSession.shared.data(for: urlRequest)
+            guard let httpResponse = response as? HTTPURLResponse else { return nil }
+            switch httpResponse.statusCode {
+            case 200...299:
+                guard let pokemonDetail = try? JSONDecoder().decode(T.self, from: data) else {return nil}
+                return pokemonDetail
+            default:
+                print("Status code 404")
+            }
+        } catch {
+            throw PokemonError.failedDetailPokemon
+            print("Error al hacer la consulta GET")
+        }
+        return nil
     }
     
 }
