@@ -29,6 +29,8 @@ class ListPokemonViewModel: ObservableObject {
                 for namePoke in self.listName.nameList {
                     pokemon.nameListPoke_ = namePoke
                 }
+                // Usar ListPokemonTransformer para guardar el atributo pokemon
+                
                 let test = pokemon
                 do {
                     try context.save()

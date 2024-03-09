@@ -28,6 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UIWindowSceneDelegate {
 //        let navigationController = UINavigationController(rootViewController: rootViewController)
 //        window?.rootViewController = navigationController
 //        window?.makeKeyAndVisible()
+        ListPokemonTransformer.register()
         return true
     }
 

@@ -8,7 +8,11 @@
 import Foundation
 import SwiftUI
 
-struct ListPokemonModel {
+protocol ListPokemonModelProtocol: AnyObject {
+    
+}
+
+class ListPokemonModel: ListPokemonModelProtocol {
     var nameList: [String]
     var url: [String]
     var image: Image?

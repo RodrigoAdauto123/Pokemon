@@ -222,8 +222,8 @@
             filePath = "pokemon/Modules/ListPokemonViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
             landmarkName = "fetchDetail()"
             landmarkType = "7">
          </BreakpointContent>
@@ -238,8 +238,8 @@
             filePath = "pokemon/Modules/ListPokemonViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
             landmarkName = "fetchDetail()"
             landmarkType = "7">
             <Locations>
@@ -302,8 +302,8 @@
             filePath = "pokemon/Modules/ListPokemonViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
             landmarkName = "fetchDetail()"
             landmarkType = "7">
          </BreakpointContent>
@@ -334,8 +334,8 @@
             filePath = "pokemon/Modules/ListPokemonViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
             landmarkName = "fetchDetail()"
             landmarkType = "7">
             <Locations>
@@ -397,8 +397,8 @@
             filePath = "pokemon/Modules/ListPokemonViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
             landmarkName = "fetchDetail()"
             landmarkType = "7">
             <Locations>
@@ -475,8 +475,8 @@
             filePath = "pokemon/Modules/ListPokemonViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
             landmarkName = "fetchDetail()"
             landmarkType = "7">
             <Locations>
@@ -768,48 +768,16 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "DAB4E855-E46B-45D3-81F7-63447C8D7B59"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "pokemon/Modules/ListPokemonViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
             landmarkName = "fetch()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "DAB4E855-E46B-45D3-81F7-63447C8D7B59 - f9b45153a0d476b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (pokemon.ResultPokemon&lt;pokemon.ListPokemon&gt;) -&gt; () in pokemon.ListPokemonViewModel.fetch() -&gt; ()"
-                  moduleName = "pokemon"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rodrigoadauto/Documents/GitHub/pokemon/pokemon/Modules/ListPokemonViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "34"
-                  endingLineNumber = "34"
-                  offsetFromSymbolStart = "896">
-               </Location>
-               <Location
-                  uuid = "DAB4E855-E46B-45D3-81F7-63447C8D7B59 - f9b45153a0d476b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (pokemon.ResultPokemon&lt;pokemon.ListPokemon&gt;) -&gt; () in pokemon.ListPokemonViewModel.fetch() -&gt; ()"
-                  moduleName = "pokemon"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rodrigoadauto/Documents/GitHub/pokemon/pokemon/Modules/ListPokemonViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "34"
-                  endingLineNumber = "34"
-                  offsetFromSymbolStart = "932">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
